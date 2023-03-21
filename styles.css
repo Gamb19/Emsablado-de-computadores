@@ -6,7 +6,6 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 header{
-    position: fixed;
     width: 100%;
 }
 .navbar{
@@ -74,7 +73,29 @@ margin-top: 10px;
     font-weight: 700;
     size: 36px; 
 }
-
+.circulo{
+    width: 300px;
+    height: 300px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+border: 1px solid black;
+margin: 40px 60px 0px 60px;
+}
+.circulo-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-circulos{
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 100px;
+}
 
 @media (max-width: 720px) {
    .guide-construction img{
