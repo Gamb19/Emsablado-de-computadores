@@ -97,6 +97,39 @@ margin: 40px 60px 0px 60px;
     padding: 100px;
 }
 
+.nav-form{
+    height: 6vh;
+}
+.form{
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.div-form{
+    background-image: url("./images/registroRD.png");
+    background-color: #EFEFEF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .input-registro{
+    padding: 0;
+}
+.div-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn-enviar{
+    width: 44%;
+}
+
 @media (max-width: 720px) {
    .guide-construction img{
     display: none;
@@ -119,5 +152,8 @@ margin: 40px 60px 0px 60px;
     .info-container-sec4{
         flex-wrap: wrap;
     flex-direction: column;
+    }
+    .form{
+        width: 40%;
     }
   }
