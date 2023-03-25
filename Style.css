@@ -23,7 +23,6 @@ h2{
     text-align: center;
 }
 .carousel-item img{
-
-    width: 450px;
+    max-width: 550px;
     height: 650px;
 }
