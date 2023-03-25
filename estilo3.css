@@ -6,6 +6,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+
 .titulo {
 
     background-color: black;
@@ -25,9 +26,9 @@ h2 {
     text-align: center;
 }
 
-.carousel-item img {
+.carousel-inner img {
 
-    max-width: 800px;
+    width: 800px;
     max-height: 600px;
 }
 
@@ -63,5 +64,12 @@ h2 {
 
     font-weight: 700;
     text-align: center;
+
+}
+@media(max-width:968px){
+    .carrousel1, .carrousel2{
+        flex-wrap: wrap;
+    }
+    
 
 }
