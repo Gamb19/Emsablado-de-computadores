@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.titulo {
+
+    background-color: black;
+    padding: 100px;
+}
+
+.titulo h1 {
+
+    color: white;
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 48px;
+    font-style: bold;
+    font-weight: 700;
+    text-align: center;
+}
+
+.carousel-inner img {
+
+    width: 1200px;
+   max-height: 800px; 
+}
+
+.carrousel1 {
+
+    background-color: black;
+    padding: 100px;
+}
+
+.carrousel1 div h3 {
+    color: white;
+    font-size: 48px;
+
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.carrousel1 div p {
+
+    color: white;
+}
+
+.carrousel1 div li {
+
+    color: white;
+}
+
+.carrousel2 div h3 {
+
+
+    font-size: 48px;
+
+    font-weight: 700;
+    text-align: center;
+
+}
