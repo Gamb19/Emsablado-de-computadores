@@ -129,6 +129,11 @@ form .input-registro{
 .error{
     color: red;
 }
+div .smsBienvenida{
+    margin-bottom: 0rem ;
+    color: white;
+    font-weight: bold;
+}
 
 @media (max-width: 720px) {
    .guide-construction img{

@@ -124,11 +124,12 @@ if (indexedDB && form) {
         // Validacines para agragar el nuevo usuario
         try {
             // la promesa retorna true o false
-            let ratPromesa = await validateUser(data.User, data.Email)
+            let rtaPromesa = await validateUser(data.User, data.Email)
 
-            if (ratPromesa && data.Email === data.confEmail && data.Password === data.confPassword && data.User) {
+            if (rtaPromesa && data.Email === data.confEmail && data.Password === data.confPassword && data.User) {
                 addUser(data);
                 form.reset()
+                location.href="http://127.0.0.1:5500/loginRuben.html"
             }
             if (data.Email !== data.confEmail) {
                 labelEmail.className = "error"
