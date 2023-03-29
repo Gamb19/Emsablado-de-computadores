@@ -61,11 +61,16 @@ if (indexedDB && form) {
                 if (cursor && onConsulta) {
                     let emailDb = cursor.value.Email
                     let passwordDb = cursor.value.Password
+                    let labelPassword  = document.getElementById("labelPassword")
     
                     if (emailDb === emailInput && passwordDb === passwordInput) {
                         location.href="http://127.0.0.1:5500/index.html"
                         resolve(true)
                         onConsulta = false
+                        labelPassword.className = ""
+                    }
+                    if (emailDb === emailInput && passwordDb !== passwordInput) {
+                        labelPassword.className = "error"
                     }
                     cursor.continue()
                 }
@@ -88,9 +93,9 @@ if (indexedDB && form) {
         // Validar si el usuario existe
         try {
             // la promesa retorna true o false
-            let promesa = await readUsers(data.Password,data.Email)
+            let rtaPromesa = await readUsers(data.Password,data.Email)
 
-            if (promesa) {
+            if (rtaPromesa) {
                 userLoggedIn(data)
             }
         } catch (error) {
