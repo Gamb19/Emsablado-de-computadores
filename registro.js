@@ -129,7 +129,7 @@ if (indexedDB && form) {
             if (rtaPromesa && data.Email === data.confEmail && data.Password === data.confPassword && data.User) {
                 addUser(data);
                 form.reset()
-                location.href="http://127.0.0.1:5500/loginRuben.html"
+                location.href="http://127.0.0.1:5500/login.html"
             }
             if (data.Email !== data.confEmail) {
                 labelEmail.className = "error"
