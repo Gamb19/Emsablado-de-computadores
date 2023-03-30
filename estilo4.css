@@ -27,8 +27,8 @@ h2 {
 
 .carousel-inner img {
 
-    width: 1200px;
-   max-height: 800px; 
+    min-width: 500px;
+   height: 450px; 
 }
 
 .carrousel1 {
@@ -65,7 +65,7 @@ h2 {
     text-align: center;
 
 }
-@media(max-width:968px){
+@media(max-width:845px){
     .carrousel1, .carrousel2{
         flex-wrap: wrap;
     }

@@ -20,7 +20,7 @@
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 45px;
     font-style: bold;
     font-weight: 700;
     text-align: center;
@@ -28,8 +28,8 @@ h2 {
 
 .carousel-inner img {
 
-    width: 800px;
-    max-height: 600px;
+    min-width: 700px;
+    height: 600px;
 }
 
 .carrousel1 {
@@ -66,7 +66,7 @@ h2 {
     text-align: center;
 
 }
-@media(max-width:968px){
+@media(max-width:770px){
     .carrousel1, .carrousel2{
         flex-wrap: wrap;
     }
