@@ -4,34 +4,54 @@ const form = document.getElementById("form")
 if (indexedDB && form) {
     let db
     let onConsulta = true
-    const req = indexedDB.open("register",1)
+    const req = indexedDB.open("Users",1)
 
     // Base de datos
     req.onsuccess = ()=>{
         db = req.result
         console.log("OPEN",db);
+        readLogin()
     }
 
     // Almacen de la base de datos
     req.onupgradeneeded = ()=>{
         db = req.result
         console.log("Create",db);
-        db.createObjectStore("User",{
+        db.createObjectStore("signUp",{
             keyPath:"User"
+        }),
+        db.createObjectStore("LogIn",{
+            keyPath:"Id"
         })
+    }
+
+    // Si hay un usuario ya logiado, lo redirige a la pagina principal
+    const readLogin = ()=>{
+        const transaction = db.transaction(['LogIn'])
+        const objectStore = transaction.objectStore('LogIn')
+        const req = objectStore.openCursor()
+        req.onsuccess = (e)=>{
+            const cursor = e.target.result
+            if (cursor) {
+                location.href="http://127.0.0.1:5500/index.html"
+            }
+        }
+        req.onerror = (e) =>{
+            console.log(e);
+        }
     }
 
     // Agregar usuarios
     const addUser = (data)=>{
-        const transaction = db.transaction(['User'],'readwrite')
-        const objectStore = transaction.objectStore('User')
+        const transaction = db.transaction(['signUp'],'readwrite')
+        const objectStore = transaction.objectStore('signUp')
         objectStore.add(data)
     }
 
     // Funcion para verificar los usuarios
     const validateUser = (userInput,emailInput)=>{
-        const transaction = db.transaction(['User'])
-        const objectStore = transaction.objectStore('User')
+        const transaction = db.transaction(['signUp'])
+        const objectStore = transaction.objectStore('signUp')
         const req = objectStore.openCursor()
         const labelUser = document.getElementById("labelUser")
         const inputUser = document.getElementById("user")
@@ -73,8 +93,8 @@ if (indexedDB && form) {
                 }
             }
 
-            req.onerror = (e) =>{
-                console.log(e);
+            req.onerror = (error) =>{
+                console.log(error);
             }
         })
     }
@@ -93,7 +113,7 @@ if (indexedDB && form) {
         let inputConfPass = document.getElementById("confPassword")
         onConsulta = true
         e.preventDefault()
-        data = {
+        let data = {
             User: e.target.user.value,
             Email: e.target.email.value,
             confEmail: e.target.confEmail.value,
@@ -104,11 +124,12 @@ if (indexedDB && form) {
         // Validacines para agragar el nuevo usuario
         try {
             // la promesa retorna true o false
-            let ratPromesa = await validateUser(data.User, data.Email)
+            let rtaPromesa = await validateUser(data.User, data.Email)
 
-            if (ratPromesa && data.Email === data.confEmail && data.Password === data.confPassword && data.User) {
+            if (rtaPromesa && data.Email === data.confEmail && data.Password === data.confPassword && data.User) {
                 addUser(data);
                 form.reset()
+                location.href="http://127.0.0.1:5500/login.html"
             }
             if (data.Email !== data.confEmail) {
                 labelEmail.className = "error"
@@ -131,7 +152,8 @@ if (indexedDB && form) {
                 inputConfPass.placeholder = "Confirmar Contraseña"
             }
 
-        } catch (error) {
+        }
+        catch (error) {
             console.log({
                 mensaje:"User already exists, check email and username",
                 error
