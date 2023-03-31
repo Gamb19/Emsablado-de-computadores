@@ -62,7 +62,7 @@ function txtBienvenida() {
                         ulMenu.insertAdjacentElement("beforeend",liMenu)
                         
                         const textoNameUser = document.getElementById("smsBienvenida")
-                        textoNameUser.textContent = cursor.value.User
+                        textoNameUser.textContent ="Hola,"+ cursor.value.User
                     }
                     cursor.continue()
                 }

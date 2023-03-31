@@ -26,3 +26,9 @@ h2{
     max-width: 550px;
     height: 650px;
 }
+@media (max-width:600px) {
+    .carousel-item img {
+        max-width: 350px;
+        height: 650px;
+    }
+}
