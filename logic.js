@@ -64,8 +64,8 @@ function txtBienvenida() {
                             cerrarSesion(db)
                         })
 
-                        liMenu.insertAdjacentElement("beforeend",opcionMenu)
                         ulMenu.insertAdjacentElement("beforeend",liMenu)
+                        liMenu.insertAdjacentElement("beforeend",opcionMenu)
                         
                         const textoNameUser = document.getElementById("smsBienvenida")
                         textoNameUser.textContent ="Hola, "+ cursor.value.User
@@ -92,6 +92,13 @@ function administracion(db) {
     let keyUser = ""
     let optionEjecutar = ""
     let divListaUser = document.getElementById("listaUser")
+    let addUser = document.getElementById("addUser")
+    addUser.addEventListener("click",(e)=>{
+        optionEjecutar = "AgregarUsuario"
+        document.getElementById("btnEditar").textContent = "Agregar"
+        formUpdate.className = ""
+        formUpdate.reset()
+    })
     let formUpdate = document.getElementById("formEditar")
     formUpdate.addEventListener("submit",(e)=>{
         formUpdateData(e)
@@ -130,6 +137,7 @@ function administracion(db) {
                     document.getElementById("user").value = dataUser.user
                     document.getElementById("email").value = dataUser.email
                     document.getElementById("password").value = dataUser.password
+                    document.getElementById("btnEditar").textContent = "Editar"
                     formUpdate.className = ""
                     keyUser = dataUser.key
                     optionEjecutar = "Editar"
@@ -184,7 +192,6 @@ function administracion(db) {
                 deleteRequest.onsuccess = (event) => {
                     printUsers()
                 }
-
             }
             else throw new Error("Error en la consulta")
         }
@@ -193,6 +200,18 @@ function administracion(db) {
         }
     }
 
+    const addNewUser = (data)=>{
+        let dataNewUser = { ...data}
+        dataNewUser.id = data.User+data.User
+        dataNewUser.confEmail = data.Email
+        dataNewUser.confPassword = data.Password
+
+        const transaction = db.transaction(['signUp'],'readwrite')
+        const objectStore = transaction.objectStore('signUp')
+        objectStore.add(dataNewUser)
+        printUsers()
+        formUpdate.className = "displayNone"
+    }
 
     const formUpdateData = (e)=>{
         e.preventDefault()
@@ -201,7 +220,10 @@ function administracion(db) {
             Email: e.target.email.value,
             Password: e.target.password.value,
         }
-        updateDB(data)
+        if (optionEjecutar === "AgregarUsuario") {
+            addNewUser(data)
+        }
+        else updateDB(data)
     }
 
     // Lo Primero en ejecutarse en Administracion
