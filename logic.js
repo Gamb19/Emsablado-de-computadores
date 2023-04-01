@@ -204,7 +204,7 @@ function administracion(db) {
         updateDB(data)
     }
 
-    // Lo Primero en ejecutarse
+    // Lo Primero en ejecutarse en Administracion
     printUsers()
 }
 

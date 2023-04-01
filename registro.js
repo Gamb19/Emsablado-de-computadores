@@ -13,18 +13,6 @@ if (indexedDB && form) {
         readLogin()
     }
 
-    // Almacen de la base de datos
-    // req.onupgradeneeded = ()=>{
-    //     db = req.result
-    //     console.log("Create",db);
-    //     db.createObjectStore("signUp",{
-    //         autoIncrement:true
-    //     }),
-    //     db.createObjectStore("LogIn",{
-    //         keyPath:"Id"
-    //     })
-    // }
-
     // Si hay un usuario ya logiado, lo redirige a la pagina principal
     const readLogin = ()=>{
         const transaction = db.transaction(['LogIn'])

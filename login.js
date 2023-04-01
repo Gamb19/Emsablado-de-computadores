@@ -13,18 +13,6 @@ if (indexedDB && form) {
         readLogin()
     }
 
-    // Almacen de la base de datos
-    // req.onupgradeneeded = ()=>{
-    //     db = req.result
-    //     console.log("Create",db);
-    //     db.createObjectStore("signUp",{
-    //         keyPath:"User"
-    //     }),
-    //     db.createObjectStore("LogIn",{
-    //         keyPath:"Id"
-    //     })
-    // }
-
     // Registrar el login
     const userLoggedIn = (data)=>{
         const transaction = db.transaction(['LogIn'],'readwrite')
