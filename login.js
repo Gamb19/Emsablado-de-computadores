@@ -14,16 +14,16 @@ if (indexedDB && form) {
     }
 
     // Almacen de la base de datos
-    req.onupgradeneeded = ()=>{
-        db = req.result
-        console.log("Create",db);
-        db.createObjectStore("signUp",{
-            keyPath:"User"
-        }),
-        db.createObjectStore("LogIn",{
-            keyPath:"Id"
-        })
-    }
+    // req.onupgradeneeded = ()=>{
+    //     db = req.result
+    //     console.log("Create",db);
+    //     db.createObjectStore("signUp",{
+    //         keyPath:"User"
+    //     }),
+    //     db.createObjectStore("LogIn",{
+    //         keyPath:"Id"
+    //     })
+    // }
 
     // Registrar el login
     const userLoggedIn = (data)=>{
@@ -41,7 +41,9 @@ if (indexedDB && form) {
 
         req.onsuccess = (e)=>{
             const cursor = e.target.result
-            if (cursor) {
+            if (cursor && cursor.value.Email == "admin") {
+                location.href="http://127.0.0.1:5500/admin.html"
+            }else if (cursor){
                 location.href="http://127.0.0.1:5500/index.html"
             }
         }
@@ -92,6 +94,12 @@ if (indexedDB && form) {
 
         // Validar si el usuario existe
         try {
+
+            if (data.Email === "admin" && data.Password === "12345") {
+                location.href="http://127.0.0.1:5500/admin.html"
+                userLoggedIn(data)
+                return false
+            }
             // la promesa retorna true o false
             let rtaPromesa = await readUsers(data.Password,data.Email)
 

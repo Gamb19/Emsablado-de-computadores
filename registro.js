@@ -14,16 +14,16 @@ if (indexedDB && form) {
     }
 
     // Almacen de la base de datos
-    req.onupgradeneeded = ()=>{
-        db = req.result
-        console.log("Create",db);
-        db.createObjectStore("signUp",{
-            keyPath:"User"
-        }),
-        db.createObjectStore("LogIn",{
-            keyPath:"Id"
-        })
-    }
+    // req.onupgradeneeded = ()=>{
+    //     db = req.result
+    //     console.log("Create",db);
+    //     db.createObjectStore("signUp",{
+    //         autoIncrement:true
+    //     }),
+    //     db.createObjectStore("LogIn",{
+    //         keyPath:"Id"
+    //     })
+    // }
 
     // Si hay un usuario ya logiado, lo redirige a la pagina principal
     const readLogin = ()=>{
@@ -32,7 +32,9 @@ if (indexedDB && form) {
         const req = objectStore.openCursor()
         req.onsuccess = (e)=>{
             const cursor = e.target.result
-            if (cursor) {
+            if (cursor && cursor.value.Email == "admin") {
+                location.href="http://127.0.0.1:5500/admin.html"
+            }else if (cursor){
                 location.href="http://127.0.0.1:5500/index.html"
             }
         }
@@ -114,12 +116,14 @@ if (indexedDB && form) {
         onConsulta = true
         e.preventDefault()
         let data = {
+            id: e.target.user.value + e.target.user.value,
             User: e.target.user.value,
             Email: e.target.email.value,
             confEmail: e.target.confEmail.value,
             Password: e.target.password.value,
             confPassword: e.target.confPassword.value
         }
+        console.log(data);
 
         // Validacines para agragar el nuevo usuario
         try {
