@@ -5,6 +5,11 @@
     list-style: none;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+p{
+
+    text-align: justify;
+    
+}
 
 
 .titulo {
@@ -26,10 +31,10 @@ h2 {
     text-align: center;
 }
 
-.carousel-inner img {
+ img {
 
-    min-width: 700px;
-    height: 600px;
+    min-width: 450px;
+    height: 350px;
 }
 
 .carrousel1 {
@@ -50,6 +55,7 @@ h2 {
 .carrousel1 div p {
 
     color: white;
+    text-align: justify;
 }
 
 .carrousel1 div li {
@@ -66,10 +72,22 @@ h2 {
     text-align: center;
 
 }
+
 @media(max-width:770px){
     .carrousel1, .carrousel2{
         flex-wrap: wrap;
     }
+    .carousel-inner img{
+
+        min-width: 350px;
+        height: 250px;
+    }
+    .titulo h1 {
+
+        color: white;
+        font-size: 40px;
+    }
+    
     
 
 }
