@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+
+}
+h1 {
+  font-family: Montserrat Alternates;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: left;
+  padding: 20px;
+  text-align: center;
+}
+.list-users {
+  background-color: black;
+}
+p {
+  color: white;
+  font-size: 20px;
+}
+.nav-item {
+  color: black;
+}
+table {
+  min-width: 500px;
+  max-width: 499px;
+}
+.nav-item{
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+thead {
+  background-color: black;
+}
+button{
+    margin-right: 30px;
+}
+input{
+    width: 150px;
+}
+.form-add{
+    padding-left: 20px;
+}
+#btnEditar{
+    width: 100px;
+    margin-top: 20px;
+}
+.td-Btn{
+  display: flex;
+}
+@media(max-width:600px) {
+  table{
+    min-width: 300px;
+    max-width: 299px;
+  }
+  button{
+    margin: 10px;
+  }
+}
+

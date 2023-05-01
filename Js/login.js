@@ -1,6 +1,6 @@
 const indexedDB = window.indexedDB
 const form = document.getElementById("form")
-
+const btnOlvidar = document.getElementById('Olvidar');
 if (indexedDB && form) {
     let db
     const req = indexedDB.open("Users",1)
@@ -88,6 +88,7 @@ if (indexedDB && form) {
                 userLoggedIn(data)
                 return false
             }
+        
             // la promesa retorna true o false
             let rtaPromesa = await readUsers(data.Password,data.Email)
 

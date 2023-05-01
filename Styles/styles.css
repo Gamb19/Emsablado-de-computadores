@@ -106,7 +106,7 @@ margin: 40px 60px 0px 60px;
     gap: 10px;
 }
 .div-form{
-    background-image: url("./images/registroRD.png");
+    background-image: url("/images/registroRD.png");
     background-color: #EFEFEF;
     background-repeat: no-repeat;
     background-size: cover;

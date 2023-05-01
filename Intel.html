@@ -5,81 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel_Prosesadores</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="EstiloP.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="stylesheet" href="./Styles/EstiloP.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/61aacdca3d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700;900&family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/61aacdca3d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
-            aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="./index.html">
-              <i class="fa-solid fa-house"></i>
-            </a>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="#">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Constructora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Guias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Armadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Constructora</a>
+                <a class="nav-link" aria-current="page" href="#">Registrate</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Guias</a>
+                <a class="nav-link" href="#">Ingresa</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Armadas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
-              </li>
-  
             </ul>
-            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Registrate</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ingresa</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </nav>
-</body>
-<main>
+      </div>
+    </nav>
+
+  </header>
+  <main>
     <section class=" d-flex justify-content-center align-items-center Titulo">
-      <img src="images/Intel_p.png">   
+      <img src="images/Intel_p.png" class="img-fluid">   
     </section>
 
     <section class="informacion">
       <div>
           <h2>Intel Procesadores</h2>
-          <p>Intel Corporation es una empresa multinacional de tecnología estadounidense que diseña y fabrica procesadores, chipsets, controladores 
+          <p class="mt-2 mb-2 ms-4 me-2">Intel Corporation es una empresa multinacional de tecnología estadounidense que diseña y fabrica procesadores, chipsets, controladores 
             de redes, unidades de almacenamiento y otros componentes informáticos. La compañía fue fundada en 1968 y tiene su sede en Santa Clara, California.</p>
 
-            <p>Los procesadores de Intel son utilizados en una amplia gama de dispositivos, desde computadoras personales y portátiles hasta 
+            <p class="mt-2 mb-2 ms-4 me-2">Los procesadores de Intel son utilizados en una amplia gama de dispositivos, desde computadoras personales y portátiles hasta 
               servidores, estaciones de trabajo y dispositivos móviles. 
               La compañía es conocida por su línea de procesadores Intel Core, que se divide en varias categorías según el rendimiento, 
               como i3, i5, i7 e i9.</p>
           <ul class="list-group">
-              <li class="list-group-item"> Intel Core i3: Es la línea de procesadores más básica de Intel y se enfoca en usuarios 
+              <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded"> Intel Core i3: Es la línea de procesadores más básica de Intel y se enfoca en usuarios 
                 de nivel básico que solo necesitan realizar tareas simples como navegar por la web, enviar correos electrónicos, etc. </li>
-              <li class="list-group-item">Intel Core i5: Es una línea de procesadores más avanzada que ofrece un rendimiento 
+              <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded">Intel Core i5: Es una línea de procesadores más avanzada que ofrece un rendimiento 
                 sólido para la mayoría de los usuarios cotidianos, como los jugadores y los profesionales que necesitan realizar 
                 tareas de productividad.</li>
-              <li class="list-group-item">Intel Core i7: Esta línea de procesadores ofrece un mayor rendimiento y potencia que 
+              <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded">Intel Core i7: Esta línea de procesadores ofrece un mayor rendimiento y potencia que 
                 los modelos i3 y i5, y es adecuada para usuarios que realizan tareas más exigentes, como edición de video y diseño gráfico.</li>
-              <li class="list-group-item">Intel Core i9: Es la línea de procesadores más avanzada de Intel y está diseñada para 
+              <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded">Intel Core i9: Es la línea de procesadores más avanzada de Intel y está diseñada para 
                 usuarios de alta gama que necesitan un rendimiento extremadamente potente y rápido, como los jugadores serios, los editores de 
                 video profesionales y los diseñadores gráficos.</li>
           </ul>
@@ -87,22 +89,26 @@
 
   </section>
   <section class="info-container-sec4 d-flex">
-    <div class="bk-black">
-      <div class="d-flex justify-content-center align-items-center flex-column">
+    <div class="bk-black border border-white rounded">
+      <div class="d-flex justify-content-center align-items-center flex-column ">
         <h2 class="white">LGA 1200</h2>
-        <h3 class="text-primary">Este es el zócalo utilizado por los procesadores Intel de décima y undécima generación, 
-          también conocidos como Comet Lake y Rocket Lake.</h3>
-      <img src="./images/LGA-1200.png" alt="">
+          <h5 class="text-white text-center">
+            Este es el zócalo utilizado por los procesadores Intel de décima y undécima generación, 
+            también conocidos como Comet Lake y Rocket Lake.
+          </h5>          
+      <img src="./images/LGA-1200.png" alt="" class="img-fluid">
       <a href="#">Construye con este componente ></a>         
       </div>
     </div>
 
-    <div class="bk-white">
+    <div class="bk-white border border-dark rounded">
       <div class="d-flex justify-content-center align-items-center flex-column kingston">
         <h2 class="black">LGA 1151</h2>
-        <h3 class="text-primary"> Este zócalo se utilizó para los procesadores Intel de sexta, séptima, 
-          octava y novena generación, también conocidos como Skylake, Kaby Lake, Coffee Lake y Whiskey Lake.</h3>  
-      <img src="./images/LGA_1151-removebg-preview.png" alt="" class="kingston-img">  
+        <h5 class="text-dark text-center"> 
+          Este zócalo se utilizó para los procesadores Intel de sexta, séptima, 
+          octava y novena generación, también conocidos como Skylake, Kaby Lake, Coffee Lake y Whiskey Lake.
+        </h5>  
+      <img src="./images/LGA_1151-removebg-preview.png" alt="" class="img-fluid">  
       <a href="#">Construye con este componente ></a>      
       </div>
     </div>
@@ -112,23 +118,31 @@
 
 <section class="info-container-sec4 d-flex">
  
-  <div class="bk-white">
+  <div class="bk-white border border-dark rounded">
     <div class="d-flex justify-content-center align-items-center flex-column kingston">
       <h2 class="black">LGA 2066:</h2>
-      <h3 class="text-primary"> Este es el zócalo utilizado por los procesadores de alta gama de Intel, como los procesadores Core X-Series.</h3>
-    <img src="./images/LGA_2066-removebg-preview.png" alt="" class="kingston-img">
+      <h5 class="text-dark text-center"> 
+        Este es el zócalo utilizado por los procesadores de alta gama de Intel, 
+        como los procesadores Core X-Series.
+      </h5>
+    <img src="./images/LGA_2066-removebg-preview.png" alt="" class="img-fluid">
     <a href="#">Construye con este componente ></a>        
     </div>
   </div>
-  <div class="bk-black">
+  <div class="bk-black border border-white rounded">
     <div class="d-flex justify-content-center align-items-center flex-column">
       <h2 class="white">LGA 1150</h2>
-      <h3 class="text-primary">Este zócalo se utilizó para los procesadores Intel de cuarta generación, también conocidos como Haswell.</h3>
-    <img src="./images/LGA_1151-removebg-preview.png" alt="">
+      <h5 class="text-white text-center">
+        Este zócalo se utilizó para los procesadores Intel de cuarta generación, 
+        también conocidos como Haswell.
+      </h5>
+    <img src="./images/LGA_1151-removebg-preview.png" alt="" class="img-fluid">
     <a href="#">Construye con este componente ></a>       
     </div>
   </div>
   
 </section>
-</main>    
+</main> 
+</body>
+  
 </html>

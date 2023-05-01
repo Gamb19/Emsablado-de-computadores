@@ -42,8 +42,8 @@ if (indexedDB && form) {
     const validateUser = (userInput,emailInput)=>{
         const transaction = db.transaction(['signUp'])
         const objectStore = transaction.objectStore('signUp')
-        const req = objectStore.openCursor()
-        const labelUser = document.getElementById("labelUser")
+        const req = objectStore.openCursor();
+        const labelUser = document.getElementById("labelUser");
         const inputUser = document.getElementById("user")
         const labelEmail = document.getElementById("labelEmail")
         const inputEmail = document.getElementById("email")

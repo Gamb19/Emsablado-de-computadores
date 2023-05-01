@@ -58,6 +58,7 @@ function txtBienvenida() {
                 const cursor = e.target.result
                 if (cursor) {
                     // Comparacion de usuarios
+                    //JSX
                     if (emailLogin === cursor.value.Email) {
                         let ulMenu = document.getElementById("ulMenu")
                         ulMenu.innerHTML = ""
@@ -133,18 +134,24 @@ function administracion(db) {
                     email:cursor.value.Email,
                     password:cursor.value.Password
                 }
-                // Se crean los elementos que se van a imprimir con sus propiedades
-                let ulLista = document.createElement("ul")
+                let trSeparator = document.createElement("tr");
+                let ulLista = document.createElement("tr")
                 ulLista.className = "navbar-nav col-lg-11 listaAdmin"
-                let liNameUser = document.createElement("li")
+                let liNameUser = document.createElement("td")
                 liNameUser.className = "nav-item"
+                liNameUser.colSpan=3;
                 liNameUser.textContent = cursor.value.User
-                let liEmail = document.createElement("li")
+                let liEmail = document.createElement("td")
                 liEmail.className = "nav-item"
                 liEmail.textContent = cursor.value.Email
-                let liPassword = document.createElement("li")
+                liEmail.colSpan=3;
+                let liPassword = document.createElement("td")
                 liPassword.className = "nav-item"
                 liPassword.textContent = cursor.value.Password
+                liPassword.colSpan=3;
+
+                let btnTd = document.createElement("td");
+                btnTd.className="nav-item td-Btn"
                 let btnEditar = document.createElement("button")
                 btnEditar.className = "btn btn-secondary"
                 btnEditar.textContent = "Editar"
@@ -167,13 +174,16 @@ function administracion(db) {
                 })
 
                 // Se inserta el elemento ul (ulLista) en el div (divListaUser)
-                divListaUser.insertAdjacentElement("beforeend",ulLista)
+                // divListaUser.insertAdjacentElement("beforeend",ulLista)
                 // Se inserta el resto de elemetos en la lista ul (ulLista)
-                ulLista.insertAdjacentElement("beforeend",liNameUser)
-                ulLista.insertAdjacentElement("beforeend",liEmail)
-                ulLista.insertAdjacentElement("beforeend",liPassword)
-                ulLista.insertAdjacentElement("beforeend",btnEditar)
-                ulLista.insertAdjacentElement("beforeend",btnEliminar)
+                divListaUser.insertAdjacentElement("beforeend", trSeparator);
+                trSeparator.insertAdjacentElement("beforeend",liNameUser)
+                trSeparator.insertAdjacentElement("beforeend",liPassword)
+                trSeparator.insertAdjacentElement("beforeend",liEmail)
+                btnTd.insertAdjacentElement("beforeend",btnEditar);
+                btnTd.insertAdjacentElement("beforeend",btnEliminar)
+                trSeparator.insertAdjacentElement("beforeend",btnTd)
+                
 
                 // Cuando pase por el primer usuario, continue con el recorrido
                 cursor.continue()
