@@ -74,27 +74,30 @@ margin-top: 10px;
     size: 36px; 
 }
 .circulo{
-    width: 300px;
+    width: 299px;
     height: 300px;
 -moz-border-radius: 50%;
 -webkit-border-radius: 50%;
 border-radius: 50%;
 border: 1px solid black;
 margin: 40px 60px 0px 60px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-size: 200px 200px;
 }
 .circulo-container{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     flex-direction: row;
-    align-content: space-around;
-    justify-content: space-around;
+    align-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 .section-circulos{
-    margin: 0 auto;
     max-width: 1500px;
-    padding: 100px;
+    padding: 75px;
 }
 
 .form{
@@ -144,7 +147,27 @@ div .listaAdmin{
     gap: 10px;
     margin: 10px;
 }
-
+.div-circulo{
+    width: 300px;
+}
+#psu{
+    background-image: url("/Images-Componentes/ASUS\ PRIME\ H510M-E.png");
+}
+#procesador{
+    background-image: url("/Images-Componentes/GIGABYTE\ A320M\ HD3\ \(rev.\ 1.0\).png");
+}
+#motherboard{
+    background-image: url("/Images-Componentes/MSI\ MEG\ X570S\ UNIFY-X\ MAX.png");
+}
+#memoria{
+    background-image: url("/Images-Componentes/Corsair\ 5000D\ Airflow.png");
+}
+#case{
+    background-image: url("/Images-Componentes/i9-10900F.png");
+}
+#ram{
+    background-image: url("/Images-Componentes/TUF\ GAMING\ B560M-E.png");
+}
 @media (max-width: 720px) {
    .guide-construction img{
     display: none;
