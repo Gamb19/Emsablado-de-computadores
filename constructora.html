@@ -57,7 +57,7 @@
     </header>
 
     <main>
-        <section class="d-flex align-items-center justify-content-center section-circulos">
+        <section class="d-flex align-items-center justify-content-center section-circulos p-2">
             <div class="circulo-container">
                 <div class="d-flex justify-content-center align-items-center flex-column div-circulo">
                     <div class="circulo .bck-props" id="procesador">
@@ -97,16 +97,36 @@
            
         </section>
         <hr>
-        <section>
+        <section class="d-flex flex-column align-items-center justify-content-center form-select-section">
           <form action="">
-            
+            <select class="form-select" aria-label="Default select example" id="select-procesadores">
+              <option selected>Procesadores</option>
+            </select>
 
+            <select class="form-select" aria-label="Default select example" id="select-almacenamiento">
+              <option selected>Almacenamiento</option>
+            </select>
 
+            <select class="form-select" aria-label="Default select example" id="select-mothers">
+              <option selected>MothersBoards</option>
+            </select>
 
+            <select class="form-select" aria-label="Default select example" id="select-fuentes">
+              <option selected>Fuente de poder</option>
+            </select>
+
+            <select class="form-select" aria-label="Default select example" id="select-cases">
+              <option selected>Cases</option>
+            </select>
+
+            <select class="form-select" aria-label="Default select example" id="select-ram">
+              <option selected>Memoria ram</option>
+            </select>
           </form>
         </section>
     </main>
-
+    <script src="./Js/products.js"></script>
     <script src="./Js/logic.js"></script>
+   
     
     </body>
