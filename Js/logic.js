@@ -2,6 +2,8 @@ const indexedDB = window.indexedDB
 
 // No cambiar la estructura del objeto ( componentes )
 const componentes = {
+    Id: 'Unico',
+
     Intel: {
       MothersBoards: [
         "ASUS PRIME H510M-E",
@@ -114,7 +116,7 @@ function txtBienvenida() {
                 keyPath:"Id"
             }),
             db.createObjectStore("Components",{
-                autoIncrement: true
+                keyPath:"Id"
             })
         }
 
