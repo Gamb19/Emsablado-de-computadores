@@ -1,0 +1,79 @@
+{"Intel":[
+    {
+        "Board":{
+            "ASUS PRIME H510M-E":"Images-Componentes/INTEL/intel boars/ASUS PRIME H510M-E.png",
+            "TUF GAMING B560M-E":"Images-Componentes/INTEL/intel boars/TUF GAMING B560M-E.png",
+            "GIGABYTE H510M S2H V2 (rev. 1.0)":"Images-Componentes/INTEL/intel boars/GIGABYTE H510M S2H V2 (rev. 1.0).png"
+
+        },
+        "Procesadores":{
+            "i5-11600":"Images-Componentes/INTEL/interl procesadores/i5-11600F.png",
+            "i7-11700F":"Images-Componentes/INTEL/interl procesadores/i7-11700F.png",
+            "i9-10900F":"Images-Componentes/INTEL/interl procesadores/i9-10900F.png"
+        },
+        "Fuentes":{
+            "XPG pylon 550W 80 plus bronze":"Images-Componentes/INTEL/intel funtes/XPG pylon 550W 80 plus bronze.png",
+            "Cooler Master MWE 600W 80 Plus Bronze V2":"Images-Componentes/INTEL/intel funtes/Cooler Master MWE 600W 80 Plus Bronze V2.png",
+            "Aerocool Cylon Rgb 600w 80 Plus Bronze":"Images-Componentes/INTEL/intel funtes/Aerocool Cylon Rgb 600w 80 Plus Bronze"
+
+
+        },
+        "Ram":{
+            "Teamgroup T-Force Vulcan TUF Gaming DDR4 16GB 3200MHz":"Images-Componentes/INTEL/intel Ram/Teamgroup T-Force Vulcan TUF Gaming DDR4 16GB 3200MHz.png",
+            "Corsair Vengeance LPX 16GB DDR4 3200MHz":"Images-Componentes/INTEL/intel Ram/Corsair Vengeance LPX 16GB DDR4 3200MHz.png",
+            "PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz":"Images-Componentes/INTEL/intel Ram/PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz.png"
+
+        },
+        "Almacenamiento":{
+            "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s":"Images-Componentes/INTEL/intel almacenamiento/WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s",
+            "1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s":"Images-Componentes/INTEL/intel almacenamiento/1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s",
+            "SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s":"Images-Componentes/INTEL/intel almacenamiento/SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s"
+        },
+        "Case":{
+            "Cooler Master MasterBox MB500":"Images-Componentes/INTEL/intel case/Cooler Master MasterBox MB500",
+            "Asus TUF GT301":"Images-Componentes/INTEL/intel case/Asus TUF GT301",
+            "Corsair 5000D Airflow":"Images-Componentes/INTEL/intel case/Corsair 5000D Airflow"
+        }
+
+    }
+
+    ],
+    "Ryzen":[
+        
+        {
+            "Board":{
+                "MSI A520M PRO":"Images-Componentes/Ryzen/Ryzen boars/MSI A520M PRO",
+                "MSI MPG B550 GAMING CARBON WIFI":"Images-Componentes/Ryzen/Ryzen boars/MSI MPG B550 GAMING CARBON WIFI",
+                "MSI MEG X570S UNIFY-X MAX":"Images-Componentes/Ryzen/Ryzen boars/MSI MEG X570S UNIFY-X MAX",
+                "MSI B450M MORTAR MAX":"Images-Componentes/Ryzen/Ryzen boars/MSI B450M MORTAR MAX",
+                "GIGABYTE A320M HD3 (rev. 1.0)":"Images-Componentes/Ryzen/Ryzen boars/GIGABYTE A320M HD3 (rev. 1.0)",
+                "GIGABYTE GA-AX370M-Gaming 3 (rev. 1.x)":"Images-Componentes/Ryzen/Ryzen boars/GIGABYTE GA-AX370M-Gaming 3 (rev. 1.x)",
+                "GIGABYTE B450M S2H V2 (rev. 1.x)":"Images-Componentes/Ryzen/Ryzen boars/GIGABYTE B450M S2H V2 (rev. 1.x)"
+            },
+            "Procesadores":{
+                "Ryzen 5 5600G":"Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 5 5600G.png",
+                "Ryzen 7 5700G":"Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 7 5700G.png",
+                "Ryzen 3 5300G":"Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 3 5300G.png",
+                "Athlon 3000G":"Images-Componentes/Ryzen/Ryzen procesadores/Athlon 3000G.png",
+                "Ryzen 3 2200G":"Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 3 2200G.png",
+                "Ryzen 5 2400G":"Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 5 2400G.png",
+                "Ryzen 7 4700G":"Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 7 4700G.png"
+
+            },
+
+            "Fuente":{
+                "XPG pylon 650W 80 plus bronze":"Images-Componentes/Ryzen/Ryzen Funtes/XPG pylon 650W 80 plus bronze.png",
+                "Evga 700w 700 bq 80 Plus Bonze":"Images-Componentes/Ryzen/Ryzen Funtes/Evga 700w 700 bq 80 Plus Bonze.png",
+                "500w Thermaltake Smart 80 Plus White":"Images-Componentes/Ryzen/Ryzen Funtes/500w Thermaltake Smart 80 Plus White.png",
+                "Giga-Byte Technology P650B 650W":"Images-Componentes/Ryzen/Ryzen Funtes/Giga-Byte Technology P650B 650W.png",
+                "Cougar Vtc600 600w 80 + White":"Images-Componentes/Ryzen/Ryzen Funtes/Cougar Vtc600 600w 80 + White.png",
+                "Cooler Master 600w Elite V3":"Images-Componentes/Ryzen/Ryzen Funtes/Cooler Master 600w Elite V3.png",
+                "Azza PSAZ-650W":"Images-Componentes/Ryzen/Ryzen Funtes/Azza PSAZ-650W.png"
+
+
+            }
+
+
+
+        }
+    ]}
