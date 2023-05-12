@@ -183,7 +183,41 @@ div .listaAdmin{
     margin: 50px;
     
 }
-
+footer{
+background-color: #D9D9D9;
+}
+.content-footer{
+    width: 25%;
+}
+.container-nos{
+    padding-top: 50px;
+}
+.hr-ft{
+    width: 80%;
+    border: 0.5px solid black;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #000;
+}
+footer ul{
+    padding-left: 0;
+}
+.ft-hr-contents{
+border: 1px solid white;
+}
+.icon{
+    font-size: 40px;
+    margin-right: 25px;
+    color: #000;
+}
+footer p{
+    font-weight: bold;
+}
+.p-copyrg{
+    text-align: center;
+    margin-top: 10px;
+}
 @media (max-width:1406px) {
     .div-circulo{
         max-width: 310px;

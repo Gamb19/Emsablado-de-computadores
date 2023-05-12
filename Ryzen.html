@@ -15,128 +15,157 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
-            aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="#">
-              <i class="fa-solid fa-house"></i>
-            </a>
-            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-1 me-0" href="./index.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <div class="navbar-nav col-lg-2">
+            <p class="smsBienvenida" id="smsBienvenida"></p>
+          </div>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./constructora.html"
+                >Constructora</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./guias.html">Guias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Armadas.html">Armadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Productos.html">Productos</a>
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <ul
+              class="navbar-nav col-lg-6 justify-content-lg-center"
+              id="ulMenu"
+            >
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Constructora</a>
+                <a class="nav-link" aria-current="page" href="./registro.html"
+                  >Registrate</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Guias</a>
+                <a class="nav-link" href="./login.html">Ingresa</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Armadas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
-              </li>
-  
             </ul>
-            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Registrate</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ingresa</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </nav>
-</body>
-<main>
-    <section class=" d-flex justify-content-center align-items-center Titulo">
-      <img src="images/AMD-RYZEN-1000x576-removebg-preview.png" class="img-fluid">   
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section
+      class="intel-section d-flex justify-content-center align-items-center ryzen-section"
+    >
+      <img
+        src="./Images-Intel-Ryzen-Componentes/AMD_ryzen_stylized 1.png"
+        alt=""
+        srcset=""
+        class="img-fluid max-width: 100%"
+      />
+    </section>
+    <section
+      class="d-flex flex-column justify-content-center align-items-center info p-4"
+    >
+      <h1>Informacion general</h1>
+
+      <p class="text-break">
+        Todos de pie para recibir al rey indiscutido 
+de los juegos. Tres nuevos procesadores
+ AMD Ryzen serie 7000 con tecnología
+ AMD 3D V-Cache™, para recibir una inyección
+ de rendimiento de juego masiva. Con el lanzamiento 
+de los nuevos Ryzen 9 7950X3D y Ryzen 9 7900X3D, AMD
+ combina sus procesadores tope de gama con hasta 
+144 MB de memoria en el chip.
+      </p>
     </section>
 
-    <section class="informacion">
-        <div>
-          <h2>Ryzen Procesadores</h2>
-            <p class="mt-2 mb-2 ms-4 me-2">Ryzen es una familia de procesadores de AMD que compite directamente con los procesadores de Intel. Los procesadores 
-            Ryzen utilizan la arquitectura de núcleo Zen, que ofrece un mejor rendimiento en comparación con las generaciones anteriores de 
-            procesadores AMD.</p>
-            <p class="mt-2 mb-2 ms-4 me-2">Los procesadores Ryzen también cuentan con un mayor número de núcleos y hilos que sus homólogos de Intel, lo que los hace 
-            ideales para tareas de alto rendimiento como edición de video, transcodificación, renderizado y juegos de alta calidad. 
-            La familia Ryzen incluye procesadores de escritorio y portátiles, así como procesadores para estaciones de trabajo y servidores.</p>
-            <p class="mt-2 mb-2 ms-4 me-2">Además, AMD utiliza un enfoque de compatibilidad de zócalos para sus procesadores, lo que permite a los usuarios actualizar a 
-            procesadores más nuevos sin tener que reemplazar toda la placa base</p>                
-          <ul class="list-group">
-                <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded"> Ryzen 3 Pro 2200G: un procesador de cuatro núcleos y cuatro hilos con una velocidad 
-                base de 3,5 GHz y una velocidad de reloj máxima de 3,7 GHz. Incluye una GPU Radeon Vega 8 integrada</li>
-                <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded">Ryzen 5 Pro 2500U: un procesador de cuatro núcleos y ocho hilos con una velocidad base de 2,0 GHz y una 
-                velocidad de reloj máxima de 3,6 GHz. Diseñado para su uso en computadoras portátiles, cuenta con una GPU Radeon Vega 8 integrada.</li>
-                <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded">Ryzen 7 Pro 3700U: un procesador de cuatro núcleos y ocho hilos con una velocidad base de 2,3 GHz y una 
-                velocidad de reloj máxima de 4,0 GHz. Diseñado para su uso en computadoras portátiles, cuenta con una GPU Radeon Vega 10 integrada.</li>
-                <li class="list-group-item mt-2 mb-2 ms-4 me-2 border border-dark rounded">Ryzen Threadripper Pro 3995WX: un procesador de 64 núcleos y 128 hilos con una velocidad base de 2,7 GHz y una 
-                velocidad de reloj máxima de 4,2 GHz. Diseñado para entornos de estación de trabajo de alta gama, cuenta con 128 líneas PCIe 4.0.</li>
-          </ul>
-        </div>
+    <section
+      class="d-flex justify-content-between flex-wrap componentes-img-section"
+    >
+      <div
+        class="intel-section components d-flex  flex-column"
+      >
+        <h2>LGA 2066</h2>
+        <p class="text-break">
+          CPU eficiente con socket 2066 que integra 14 núcleos y 28
+          subprocesos, alcanzando una frecuencia máxima de 4.60 Ghz
+        </p>
+        <img
+          src="./images/LGA_2066-removebg-preview.png"
+          alt=""
+          srcset=""
+          class="rounded mx-auto d-block"
+        />
+      </div>
 
-  </section>
-  <section class="info-container-sec4 d-flex">
-    <div class="bk-black border border-white rounded">
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <h2 class="white">Socket AM4</h2>
-            <h5 class="text-white text-center">Es el socket más común utilizado por los procesadores Ryzen de AMD, desde los modelos básicos hasta los más avanzados. 
-            Este socket es compatible con las placas base de la serie AMD 300, 400, 500 y 600.</h5>
-            <di class="col-md-6">
-                <img src="./images/Socket_AM4-removebg-preview.png" class="img-fluid" style="width:300px;">
-            </di>
-            <a href="#">Construye con este componente ></a>         
-        </div>
-    </div>
+      <div
+        class="components gray d-flex flex-column"
+      >
+        <h2 class="p-2">LGA 1151</h2>
+        <p class="text-break">
+          Socket compatible con microprocesadores Intel que tiene dos
+          versiones distintas: la primera revisión soporta CPUs Intel Skylake​
+          y KabyLake, y la segunda revisión soporta CPU CoffeeLake
+          exclusivamente.
+        </p>
+        <img
+          src="./images/LGA-1151-removebg-preview.png"
+          alt=""
+          srcset=""
+          class="rounded mx-auto d-block"
+        />
+      </div>
 
-    <div class="bk-white border border-dark rounded">
-        <div class="d-flex justify-content-center align-items-center flex-column kingston">
-            <h2 class="black">Socket TR4</h2>
-            <h5 class="text-dark text-center">Este socket es utilizado por los procesadores Threadripper de AMD, que están diseñados para aplicaciones de alta gama, 
-            como la edición de video y la creación de contenido. Este socket es compatible con las placas base de la serie AMD X399.</h5>  
-            <di class="col-md-6">
-                <img src="./images/Socket_TR4-removebg-preview.png" class="img-fluid" style="width:300px;">
-            </di>  
-            <a href="#">Construye con este componente ></a>      
-        </div>
-    </div>
-  </section>
-</section>
+      <div
+        class="components gray d-flex flex-column"
+      >
+        <h2>T-Force DELTA RGB DDR4 16GB 3200MHZ</h2>
+        <p>Está fabricado con un material metálico más ligero y más delgado. El diseño de la “R” hueca es altamente estereoscópico y hace juego con el área luminosa ultra gran angular.</p>
+        <img
+          src="./Images-Componentes/INTEL/intel Ram/TEAMGROUP T-Force Delta RGB DDR4 16GB 3200MHz.png"
+          alt=""
+          srcset=""
+          class="rounded mx-auto d-block"
+        />
+      </div>
 
-<section class="info-container-sec4 d-flex">
- 
-    <div class="bk-white border border-dark rounded">
-        <div class="d-flex justify-content-center align-items-center flex-column kingston">
-            <h2 class="black">Socket sTRX4</h2>
-            <h5 class="text-dark text-center">Este socket es utilizado por los procesadores Threadripper de tercera generación de AMD, 
-            y es compatible con las placas base de la serie AMD TRX40.</h5>
-            <di class="col-md-6">
-                <img src="./images/Socket-sTRX4__1_-removebg-preview.png" class="img-fluid" style="width:500px;">
-            </di>
-            <a href="#">Construye con este componente ></a>        
-        </div>
-    </div>
-    <div class="bk-black border border-white rounded">
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <h2 class="white">Socket AM5</h2>
-            <h5 class="text-white text-center">Este socket será utilizado por los procesadores Ryzen de quinta generación de AMD, 
-            que aún no han sido lanzados. Todavía no se sabe mucho sobre las especificaciones de este socket, 
-            pero se espera que sea compatible con las placas base de la serie AMD 600 y posteriores.</h5>
-            <di class="col-md-6">
-                <img src="./images/Socket AM5.png" class="img-fluid" style="width:300px;">
-            </di>
-            <a href="#">Construye con este componente ></a>       
-        </div>
-    </div>
-  
-</section>
-</main>    
+      <div
+        class="components intel-section d-flex flex-column"
+      >
+        <h2>TUF GAMING B560M-E</h2>
+        <p>Toma todos los elementos esenciales de los últimos procesadores Intel® y los combina con funciones listas para jugar y durabilidad comprobada. Diseñado con componentes de grado militar</p>
+        <img
+          src="./Images-Componentes/INTEL/intel boars/TUF GAMING B560M-E.png"
+          alt=""
+          class="rounded mx-auto d-block"
+        />
+      </div>
+    </section>
+  </main>
+  </body>
 </html>
