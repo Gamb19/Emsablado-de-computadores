@@ -5,7 +5,7 @@ const componentes = {
       "TUF GAMING B560M-E",
       "GIGABYTE H510M S2H V2 (rev. 1.0)",
     ],
-    Procesadores: ["i5-11600", "I7-11700F", "i9-10900F"],
+    Procesadores: ["I5-11600", "I7-11700F", "I9-10900F"],
     Fuente: [
       "XPG pylon 550W 80 plus bronze",
       "Cooler Master MWE 600W 80 Plus Bronze V2",

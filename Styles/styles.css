@@ -150,22 +150,22 @@ div .listaAdmin{
 .div-circulo{
     /* max-width: 300px; */
 }
-#psu{
+#div-Fuente_de_poder{
     background-image: url("/Images-Componentes/ASUS\ PRIME\ H510M-E.png");
 }
-#procesador{
+#div-Procesadores{
     background-image: url("/Images-Componentes/GIGABYTE\ A320M\ HD3\ \(rev.\ 1.0\).png");
 }
-#motherboard{
+#div-MothersBoards{
     background-image: url("/Images-Componentes/MSI\ MEG\ X570S\ UNIFY-X\ MAX.png");
 }
-#memoria{
+#div-Almacenamiento{
     background-image: url("/Images-Componentes/Corsair\ 5000D\ Airflow.png");
 }
-#case{
+#div-Cases{
     background-image: url("/Images-Componentes/i9-10900F.png");
 }
-#ram{
+#div-Memoria_Ram{
     background-image: url("/Images-Componentes/TUF\ GAMING\ B560M-E.png");
 }
 .form-select-section{
