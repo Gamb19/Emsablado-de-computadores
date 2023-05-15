@@ -10,7 +10,7 @@ const componentes = {
         "TUF GAMING B560M-E",
         "GIGABYTE H510M S2H V2 (rev. 1.0)",
       ],
-      Procesadores: ["i5-11600", "I7-11700F", "i9-10900F"],
+      Procesadores: ["I5-11600", "I7-11700F", "I9-10900F"],
       Fuente_de_poder: [
         "XPG pylon 550W 80 plus bronze",
         "Cooler Master MWE 600W 80 Plus Bronze V2",
@@ -22,7 +22,7 @@ const componentes = {
         "PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz",
       ],
       Almacenamiento: [
-        "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s ",
+        "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s",
         "1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s",
         "SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s",
       ],
