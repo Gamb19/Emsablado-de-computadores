@@ -150,7 +150,7 @@ div .listaAdmin{
 .div-circulo{
     /* max-width: 300px; */
 }
-#psu{
+/* #psu{
     background-image: url("/Images-Componentes/ASUS\ PRIME\ H510M-E.png");
 }
 #procesador{
@@ -167,7 +167,7 @@ div .listaAdmin{
 }
 #ram{
     background-image: url("/Images-Componentes/TUF\ GAMING\ B560M-E.png");
-}
+} */
 .form-select-section{
     background: url(../images/core-i9.png), url(../images/ryzen.png); 
     background-repeat: no-repeat;  
