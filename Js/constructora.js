@@ -1,6 +1,9 @@
-const indexedDB = window.indexedDB
 
+const indexedDB = window.indexedDB
+let divImg;
+let allSelectedValues = [];
 //¬ Se declaro globalmente para poder hacer uso de ella mas facilmente
+let selectedOption;
 let handleSelectChange = ()=>{};
 
 if (indexedDB) {
@@ -15,6 +18,8 @@ if (indexedDB) {
     }
 
     // Si hay un usuario ya logiado, lo redirige a la pagina principal
+    let userLoggedIn = false;
+
     const readComponents = ()=>{
         const transaction = db.transaction(['Components'])
         const objectStore = transaction.objectStore('Components')
@@ -22,36 +27,46 @@ if (indexedDB) {
         req.onsuccess = (e)=>{
             const cursor = e.target.result
             if (cursor) {
-                printData(cursor.value)
+                printData(cursor.value);
+                userLoggedIn = true;
+            } else {
+                userLoggedIn = false;
             }
+            console.log(`Usuario logeado: ${userLoggedIn}`); // imprimir si se logea un usuario
         }
         req.onerror = (e) =>{
             console.log(e);
         }
     }
-}
 
+}
+function cleanAllDivs() {
+    const divs = document.querySelectorAll("[id^='div-']"); // selecciona todos los elementos cuyo id comienza con 'div-'
+    divs.forEach(div => {
+      div.style.backgroundImage="" // elimina la imagen de fondo de cada div
+    });
+  }
 function printData(data) {
-    const { Intel, Ryzen } = data
+     // limpia todos los divs al cambiar de marca
+    const { Intel, Ryzen } = data;
 
-    let selectMarca = document.getElementById('select-marca')
-    selectMarca.addEventListener('change', (e)=>{
-
-        if (e.target.value === 'Intel') {
-            let data = Object.entries(Intel)
-            deleteEvent(data)
-            printOptions(data, e.target.value) // (e.target.value) -> Brand name
-        }
-        else {
-            const data = Object.entries(Ryzen)
-            deleteEvent(data)
-            printOptions(data, e.target.value) // (e.target.value) -> Brand name
-        }
-
-    })
-}
-
-//Funcion para eliminar el evento change que se repetia en cada cambio de marca
+    let selectMarca = document.getElementById('select-marca');
+    selectMarca.addEventListener('change', (e) => {
+      if (e.target.value === 'Intel') {
+        let data = Object.entries(Intel);
+        deleteEvent(data);
+        printOptions(data, e.target.value); // (e.target.value) -> Brand name
+        cleanAllDivs();
+      } else {
+        const data = Object.entries(Ryzen);
+        deleteEvent(data);
+        printOptions(data, e.target.value); // (e.target.value) -> Brand name
+        cleanAllDivs();
+      }
+      selectedOption = e.target.value; // actualiza la opción seleccionada previamente
+    });
+  }
+ 
 function deleteEvent(data) {
     data.forEach(element => {
         const select = document.getElementById(`select-${element[0]}`)
@@ -121,12 +136,37 @@ async function getImageUrl (e, keyMarca) {
     const urlImg = valuePropiedad[ keyUrl ]
 
     updateImg(keyPropiedad, urlImg)
-
+    window.scrollTo(1, 1);
 }
-
 function updateImg(idDiv, urlImg) {
-
-    const divImg = document.getElementById(`div-${idDiv}`)
+    divImg = document.getElementById(`div-${idDiv}`)
     divImg.style.backgroundImage = `url('../${urlImg}')`;
-
+    divImg.style.transition="background-image 3s ease";
 }
+let form= document.getElementById("formSelect")
+  let submit = document.getElementById("submit")
+
+
+  
+  submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    const selects = document.querySelectorAll('select');
+    const selectedValues = [];
+  
+    selects.forEach((select) => {
+      const selectedValue = select.value;
+      selectedValues.push(selectedValue);
+    });
+  
+    allSelectedValues.push(selectedValues);
+    console.log(allSelectedValues);
+  
+    form.reset();
+    cleanAllDivs();
+  });
+
+let bckImg = document.getElementById("form-select-section");
+bckImg.style.backgroundImage ="url(../images/core-i9.png), url(../images/ryzen.png)";
+bckImg.style.backgroundRepeat="no-repeat";
+bckImg.style.backgroundSize=("783px 700px, 783px 600px");
+bckImg.style.backgroundPosition=(" -293px 80px, 951px 220px ");

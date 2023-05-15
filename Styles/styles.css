@@ -168,11 +168,11 @@ div .listaAdmin{
 #div-Memoria_Ram{
     background-image: url("/Images-Componentes/TUF\ GAMING\ B560M-E.png");
 } */ */
-.form-select-section{
-    background: url(../images/core-i9.png), url(../images/ryzen.png); 
+#form-select-section{
+    background: url("../images/core-i9.png"), url("../images/ryzen.png"); 
     background-repeat: no-repeat;  
     background-size: 783px 700px, 783px 700px;
-    /* background-position-x: -293px, 951px; */
+    background-position-x: -293px, 951px;
     background-position: -293px 80px, 951px 200px ;
 }
 .form-select-section .form-select{
@@ -218,6 +218,9 @@ footer p{
     text-align: center;
     margin-top: 10px;
 }
+/* .aparecer{
+    transition: background-image 0.5s ease-out;
+} */
 @media (max-width:1406px) {
     .div-circulo{
         max-width: 310px;
