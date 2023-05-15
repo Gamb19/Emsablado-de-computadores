@@ -1,64 +1,90 @@
 {
   "Intel": {
-    "Board": {
-      "ASUS PRIME H510M-E": "Images-Componentes/INTEL/intel boars/ASUS PRIME H510M-E.png",
-      "TUF GAMING B560M-E": "Images-Componentes/INTEL/intel boars/TUF GAMING B560M-E.png",
-      "GIGABYTE H510M S2H V2 (rev. 1.0)": "Images-Componentes/INTEL/intel boars/GIGABYTE H510M S2H V2 (rev. 1.0).png"
+    "MothersBoards": {
+      "ASUS PRIME H510M-E": "Images-Componentes/ya terminadas/INTEL/intel boars/ASUS PRIME H510M-E.png",
+      "TUF GAMING B560M-E": "Images-Componentes/ya terminadas/INTEL/intel boars/TUF GAMING B560M-E.png",
+      "GIGABYTE H510M S2H V2 (rev. 1.0)": "Images-Componentes/ya terminadas/INTEL/intel boars/GIGABYTE H510M S2H V2 (rev. 1.0).png"
     },
     "Procesadores": {
-      "I5-11600": "Images-Componentes/INTEL/interl prosesadores/i5-11600F.png",
-      "I7-11700F": "Images-Componentes/INTEL/interl prosesadores/i7-11700F.png",
-      "I9-10900F": "Images-Componentes/INTEL/interl prosesadores/i9-10900F.png"
+      "I5-11600": "Images-Componentes/ya terminadas/INTEL/intel procesadores/i5-11600F.png",
+      "I7-11700F": "Images-Componentes/ya terminadas/INTEL/intel procesadores/i7-11700F.png",
+      "I9-10900F": "Images-Componentes/ya terminadas/INTEL/intel procesadores/i9-10900F.png"
     },
-    "Fuentes": {
-      "XPG pylon 550W 80 plus bronze": "Images-Componentes/INTEL/intel funtes/XPG pylon 550W 80 plus bronze.png",
-      "Cooler Master MWE 600W 80 Plus Bronze V2": "Images-Componentes/INTEL/intel funtes/Cooler Master MWE 600W 80 Plus Bronze V2.png",
-      "Aerocool Cylon Rgb 600w 80 Plus Bronze": "Images-Componentes/INTEL/intel funtes/Aerocool Cylon Rgb 600w 80 Plus Bronze"
+    "Fuente_de_poder": {
+      "XPG pylon 550W 80 plus bronze": "Images-Componentes/ya terminadas/INTEL/intel funtes/XPG pylon 550W 80 plus bronze.png",
+      "Cooler Master MWE 600W 80 Plus Bronze V2": "Images-Componentes/ya terminadas/INTEL/intel funtes/Cooler Master MWE 600W 80 Plus Bronze V2.png",
+      "Aerocool Cylon Rgb 600w 80 Plus Bronze": "Images-Componentes/ya terminadas/INTEL/intel funtes/Aerocool Cylon Rgb 600w 80 Plus Bronze.png"
     },
-    "Ram": {
-      "Teamgroup T-Force Vulcan TUF Gaming DDR4 16GB 3200MHz": "Images-Componentes/INTEL/intel Ram/Teamgroup T-Force Vulcan TUF Gaming DDR4 16GB 3200MHz.png",
-      "Corsair Vengeance LPX 16GB DDR4 3200MHz": "Images-Componentes/INTEL/intel Ram/Corsair Vengeance LPX 16GB DDR4 3200MHz.png",
-      "PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz": "Images-Componentes/INTEL/intel Ram/PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz.png"
+    "Memoria_Ram": {
+      "TEAMGROUP T-Force Delta RGB DDR4 16GB 3200MHz": "Images-Componentes/ya terminadas/INTEL/intel Ram/TEAMGROUP T-Force Delta RGB DDR4 16GB 3200MHz.png",
+      "Corsair Vengeance RGB Pro 16GB DDR4 3200MHz": "Images-Componentes/ya terminadas/INTEL/intel Ram/Corsair-Vengeance-RGB-Pro-16GB-DDR4-3200MHz.png",
+      "PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz": "Images-Componentes/ya terminadas/INTEL/intel Ram/PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz.png"
     },
     "Almacenamiento": {
-      "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s": "Images-Componentes/INTEL/intel almacenamiento/WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s",
-      "1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s": "Images-Componentes/INTEL/intel almacenamiento/1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s",
-      "SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s": "Images-Componentes/INTEL/intel almacenamiento/SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s"
+      "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s": "Images-Componentes/ya terminadas/INTEL/intel almacenamiento/WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB.png",
+      "1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s": "Images-Componentes/ya terminadas/INTEL/intel almacenamiento/1TB-Crucial-P5-Plus-PCIe-Gen4-3D-NAND-NVMe-M.2-Gaming-SSD_-hasta-6600MB.png",
+      "SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s": "Images-Componentes/ya terminadas/INTEL/intel almacenamiento/SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB.png"
     },
-    "Case": {
-      "Cooler Master MasterBox MB500": "Images-Componentes/INTEL/intel case/Cooler Master MasterBox MB500",
-      "Asus TUF GT301": "Images-Componentes/INTEL/intel case/Asus TUF GT301",
-      "Corsair 5000D Airflow": "Images-Componentes/INTEL/intel case/Corsair 5000D Airflow"
+    "Cases": {
+      "Cooler Master MasterBox MB500": "Images-Componentes/ya terminadas/INTEL/intel case/Cooler Master MasterBox MB500.png",
+      "Asus TUF GT301": "Images-Componentes/ya terminadas/INTEL/intel case/Asus TUF GT301.png",
+      "Corsair 5000D Airflow": "Images-Componentes/ya terminadas/INTEL/intel case/Corsair 5000D Airflow.png"
     }
   },
   "Ryzen": {
-    "Board": {
-      "MSI A520M PRO": "Images-Componentes/Ryzen/Ryzen boars/MSI A520M PRO",
-      "MSI MPG B550 GAMING CARBON WIFI": "Images-Componentes/Ryzen/Ryzen boars/MSI MPG B550 GAMING CARBON WIFI",
-      "MSI MEG X570S UNIFY-X MAX": "Images-Componentes/Ryzen/Ryzen boars/MSI MEG X570S UNIFY-X MAX",
-      "MSI B450M MORTAR MAX": "Images-Componentes/Ryzen/Ryzen boars/MSI B450M MORTAR MAX",
-      "GIGABYTE A320M HD3 (rev. 1.0)": "Images-Componentes/Ryzen/Ryzen boars/GIGABYTE A320M HD3 (rev. 1.0)",
-      "GIGABYTE GA-AX370M-Gaming 3 (rev. 1.x)": "Images-Componentes/Ryzen/Ryzen boars/GIGABYTE GA-AX370M-Gaming 3 (rev. 1.x)",
-      "GIGABYTE B450M S2H V2 (rev. 1.x)": "Images-Componentes/Ryzen/Ryzen boars/GIGABYTE B450M S2H V2 (rev. 1.x)"
+    "MothersBoards": {
+      "MSI A520M PRO": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/MSI A520M PRO.png",
+      "MSI MPG B550 GAMING CARBON WIFI": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/MSI MPG B550 GAMING CARBON WIFI.png",
+      "MSI MEG X570S UNIFY-X MAX": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/MSI MEG X570S UNIFY-X MAX.png",
+      "MSI B450M MORTAR MAX": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/MSI B450M MORTAR MAX.png",
+      "GIGABYTE A320M HD3 (rev. 1.0)": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/GIGABYTE A320M HD3 (rev. 1.0).png",
+      "GIGABYTE GA-AX370M-Gaming 3 (rev. 1.x)": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/GIGABYTE GA-AX370M-Gaming 3 (rev. 1.x).png",
+      "GIGABYTE B450M S2H V2 (rev. 1.x)": "Images-Componentes/ya terminadas/Ryzen/Ryzen boars/GIGABYTE B450M S2H V2 (rev. 1.x).png"
     },
     "Procesadores": {
-      "Ryzen 5 5600G": "Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 5 5600G.png",
-      "Ryzen 7 5700G": "Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 7 5700G.png",
-      "Ryzen 3 5300G": "Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 3 5300G.png",
-      "Athlon 3000G": "Images-Componentes/Ryzen/Ryzen procesadores/Athlon 3000G.png",
-      "Ryzen 3 2200G": "Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 3 2200G.png",
-      "Ryzen 5 2400G": "Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 5 2400G.png",
-      "Ryzen 7 4700G": "Images-Componentes/Ryzen/Ryzen procesadores/Ryzen 7 4700G.png"
+      "Ryzen 5 5600G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/Ryzen 5 5600G.png",
+      "Ryzen 7 5700G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/Ryzen 7 5700G.png",
+      "Ryzen 3 5300G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/Ryzen 3 5300G.png",
+      "Athlon 3000G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/AMD-ATHLON-3000G-1.png",
+      "Ryzen 3 2200G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/Ryzen 3 2200G.png",
+      "Ryzen 5 2400G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/Ryzen 5 2400G.png",
+      "Ryzen 7 4700G": "Images-Componentes/ya terminadas/Ryzen/Ryzen Procesadores/Ryzen 7 4700G.png"
     },
-
-    "Fuente": {
-      "XPG pylon 650W 80 plus bronze": "Images-Componentes/Ryzen/Ryzen Funtes/XPG pylon 650W 80 plus bronze.png",
-      "Evga 700w 700 bq 80 Plus Bonze": "Images-Componentes/Ryzen/Ryzen Funtes/Evga 700w 700 bq 80 Plus Bonze.png",
-      "500w Thermaltake Smart 80 Plus White": "Images-Componentes/Ryzen/Ryzen Funtes/500w Thermaltake Smart 80 Plus White.png",
-      "Giga-Byte Technology P650B 650W": "Images-Componentes/Ryzen/Ryzen Funtes/Giga-Byte Technology P650B 650W.png",
-      "Cougar Vtc600 600w 80 + White": "Images-Componentes/Ryzen/Ryzen Funtes/Cougar Vtc600 600w 80 + White.png",
-      "Cooler Master 600w Elite V3": "Images-Componentes/Ryzen/Ryzen Funtes/Cooler Master 600w Elite V3.png",
-      "Azza PSAZ-650W": "Images-Componentes/Ryzen/Ryzen Funtes/Azza PSAZ-650W.png"
+    "Fuente_de_poder": {
+      "XPG pylon 650W 80 plus bronze": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/XPG pylon 650W 80 plus bronze.png",
+      "Evga 700w 700 bq 80 Plus Bonze": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/Evga 700w 700 bq 80 Plus Bonze.png",
+      "500w Thermaltake Smart 80 Plus White": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/500w Thermaltake Smart 80 Plus White.png",
+      "Giga-Byte Technology P650B 650W": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/Giga-Byte Technology P650B 650W.png",
+      "Cougar Vtc600 600w 80 + White": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/Cougar Vtc600 600w 80 + White.png",
+      "Cooler Master 600w Elite V3": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/Cooler Master 600w Elite V3 fondo PNG.png",
+      "Azza PSAZ-650W": "Images-Componentes/ya terminadas/Ryzen/Ryzer Funtes/Azza PSAZ-650W.png"
+    },
+    "Memoria_Ram": {
+      "Corsair Dominator Platinum RGB DDR4 3200MHz": "Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/Corsair Dominator Platinum RGB DDR4 3200MHz.png",
+      "Corsair Vengeance LPX 16GB DDR4 3200MHz":"Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/Corsair Vengeance LPX 16GB DDR4 3200MHz.png",
+      "G.Skill Trident Z RGB Series 32GBDDR4 3600MHz":"Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/G.Skill Trident Z RGB Series 32GBDDR4 3600MHz.png",
+      "Kingston FURY 16 GB 2666 MHz DDR4":"Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/Kingston FURY 16 GB 2666 MHz DDR4.png",
+      "Silicon Power Value Gaming DDR4 RAM 16GB 3200MHz":"Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/Silicon-Power-Value-Gaming-DDR4-RAM-16GB-3200MHz.png",
+      "Teamgroup T-Force Vulcan TUF Gaming DDR4 16GB 3200MHz":"Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/Teamgroup T-Force Vulcan TUF Gaming DDR4 16GB 3200MHz.png",
+      "TEAMGROUP T-Force Zeus DDR4 16GB 3200MHz":"Images-Componentes/ya terminadas/Ryzen/Ryzen Ram/TEAMGROUP T-Force Zeus DDR4 16GB 3200MHz.png"
+    },
+    "Almacenamiento": {
+      "Crucial P3 Gen3 3D NAND NVMe M.2 de 1TB, hasta 3500 MB/s":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/Crucial P3 Gen3 3D NAND NVMe M.2 de 1TB, hasta 3500 MBs.png",
+      "Western Digital NVMe 1TB WD Blue Gen3 x4, M.2 2280, hasta 3,500 MB/s":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/Western-Digital-NVMe-1TB-WD-Blue-Gen3-x4_-M.2-2280_-hasta-3_500-MBs.png",
+      "Kingston NV2 500G M.2 2280 NVMe PCIe 4.0 Gen 4x4 Hasta 3500 MB/s":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/Kingston NV2 500G M.2 2280 NVMe PCIe 4.0 Gen 4x4 Hasta 3500 MBs.png",
+      "PNY XLR8 500GB M.2 PCIe NVMe Gen3 x4":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/PNY XLR8 500GB M.2 PCIe NVMe Gen3 x4.png",
+      "PNY CS2140 500GB M.2 NVMe Gen4 x4 3600MHz":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/PNY CS2140 500GB M.2 NVMe Gen4 x4 3600MHz.png",
+      "WD_BLACK 1TB NVMe Gen4 PCIe, M.2 2280, hasta 5,150 MB/s":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/WD_BLACK-1TB-NVMe-Gen4-PCIe_-M.2-2280_-hasta-5_150-MBs.png",
+      "1TB Kingston FURY Renegade PCIe Gen 4.0 NVMe M.2 500 GB Hasta 7300 MB/s":"Images-Componentes/ya terminadas/Ryzen/Ryzen Almacenamiento/1TB Kingston FURY Renegade PCIe Gen 4.0 NVMe M.2 500 GB Hasta 7300 MBs.png"
+    },
+    "Cases": {
+      "JYR JX103 DESTROYER":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/JYR JX103 DESTROYER.png",
+      "Iceberg Flux Pro Rgb":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/Iceberg Flux Pro Rgb.png",
+      "Cooler Master Masterbox Q300l":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/Cooler Master Masterbox Q300l.png",
+      "Iceberg Glacius 2.0":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/Iceberg Glacius 2.0.png",
+      "Aerocool Cyberx Advance":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/Aerocool-Cyberx-Advance.png",
+      "Iceberg Flow X Argb":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/Iceberg Flow X Argb.png",
+      "Cooler Master Masterbox Td500 Mesh Black":"Images-Componentes/ya terminadas/Ryzen/Rayzen case/Cooler Master Masterbox Td500 Mesh Black.png"
     }
   }
 }

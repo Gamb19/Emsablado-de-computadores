@@ -106,8 +106,6 @@ function printOptions(data, marca) {
 
 async function getImageUrl (e, keyMarca) {
 
-    console.log(e);
-
     // Los id de cada select tienen concatenado el texto ("select-") + propertyName
     // En este caso solo se necesita el (propertyName) para eso se uso el (replace)
     const keyPropiedad = e.target.id.replace('select-','')
@@ -121,5 +119,14 @@ async function getImageUrl (e, keyMarca) {
     const valueMarca = data[ keyMarca ]
     const valuePropiedad = valueMarca[ keyPropiedad ]
     const urlImg = valuePropiedad[ keyUrl ]
+
+    updateImg(keyPropiedad, urlImg)
+
+}
+
+function updateImg(idDiv, urlImg) {
+
+    const divImg = document.getElementById(`div-${idDiv}`)
+    divImg.style.backgroundImage = `url('../${urlImg}')`;
 
 }

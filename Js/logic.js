@@ -22,7 +22,7 @@ const componentes = {
         "PNY XLR8 Gaming 16GB DDR4 DRAM 3200MHz",
       ],
       Almacenamiento: [
-        "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s ",
+        "WD_BLACK NVMe 500 GB Gen4 PCIe M.2 2280, hasta 4,000 MB/s",
         "1TB Crucial P5 Plus PCIe Gen4 3D NAND NVMe M.2 Gaming SSD, hasta 6600MB/s",
         "SAMSUNG 980 PROM.2 NVMe Gen4 de 500 GB hasta 3500MB/s",
       ],
