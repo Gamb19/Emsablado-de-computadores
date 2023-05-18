@@ -109,7 +109,8 @@ if (indexedDB && form) {
             Email: e.target.email.value,
             confEmail: e.target.confEmail.value,
             Password: e.target.password.value,
-            confPassword: e.target.confPassword.value
+            confPassword: e.target.confPassword.value,
+            componentes: []
         }
         console.log(data);
 
@@ -154,6 +155,7 @@ if (indexedDB && form) {
         }
     })
 }
+
 else{
     throw new Error("La base de datos no ha sido creada")
 }
