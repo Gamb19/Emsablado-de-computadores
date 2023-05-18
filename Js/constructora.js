@@ -1,45 +1,112 @@
-
 const indexedDB = window.indexedDB
 let divImg;
 let allSelectedValues = [];
 //¬ Se declaro globalmente para poder hacer uso de ella mas facilmente
 let selectedOption;
 let handleSelectChange = ()=>{};
+let emailUserId;
 
-if (indexedDB) {
-    let db
-    const req = indexedDB.open("Users",1)
+function runBD(addPc = false, dataPC = null) {
+    console.log({addPc,dataPC})
 
-    // Base de datos
-    req.onsuccess = ()=>{
-        db = req.result
-        console.log("OPEN",db);
-        readComponents()
-    }
+    if (indexedDB) {
+        let db
+        const req = indexedDB.open("Users",1)
+    
+        // Base de datos
+        req.onsuccess = ()=>{
+            db = req.result
+            console.log("OPEN",db);
+            if (addPc && dataPC) addUserPC()
+            readComponents()
+            readLogin()
+        }
 
-    // Si hay un usuario ya logiado, lo redirige a la pagina principal
-    let userLoggedIn = false;
-
-    const readComponents = ()=>{
-        const transaction = db.transaction(['Components'])
-        const objectStore = transaction.objectStore('Components')
-        const req = objectStore.openCursor()
-        req.onsuccess = (e)=>{
-            const cursor = e.target.result
-            if (cursor) {
-                printData(cursor.value);
-                userLoggedIn = true;
-            } else {
-                userLoggedIn = false;
+        // Agregar Pc del Usuario
+        const addUserPC = ()=>{
+            let dataPushBD = {
+                Id: emailUserId,
+                dataPC
             }
-            console.log(`Usuario logeado: ${userLoggedIn}`); // imprimir si se logea un usuario
-        }
-        req.onerror = (e) =>{
-            console.log(e);
-        }
-    }
+            console.log(dataPushBD)
+            const transaction = db.transaction(['UserPC'],'readwrite')
+            const objectStore = transaction.objectStore('UserPC')
+            // Eliminar el valor asociado a la clave
+            const deleteRequest = objectStore.delete(emailUserId);
+            deleteRequest.onsuccess = function(event) {
+                objectStore.add(dataPushBD)
+                console.log('Valor eliminado correctamente.', event);
+            };
+            deleteRequest.onerror = function(event) {
+                console.error('Error al eliminar el valor:', event.target.error);
+            };
+            // objectStore.add(dataPushBD)
 
+            return;
+        }
+    
+        // Si hay un usuario ya logiado, lo redirige a la pagina principal
+        let userLoggedIn = false;
+    
+        const readComponents = ()=>{
+            const transaction = db.transaction(['Components'])
+            const objectStore = transaction.objectStore('Components')
+            const req = objectStore.openCursor()
+            req.onsuccess = (e)=>{
+                const cursor = e.target.result
+                if (cursor) {
+                    printData(cursor.value);
+                    userLoggedIn = true;
+                } else {
+                    userLoggedIn = false;
+                }
+                // console.log(`Usuario logeado: ${userLoggedIn}`); // imprimir si se logea un usuario
+            }
+            req.onerror = (e) =>{
+                console.log(e);
+            }
+        }
+    
+        // Se lee el almacen de login para traer la data del usuario
+        const readLogin = ()=>{
+            const transaction = db.transaction(['LogIn'])
+            const objectStore = transaction.objectStore('LogIn')
+            const req = objectStore.openCursor()
+    
+            // Si existe un usuario ya ingresado, ejecuta la funcion correspondiente
+            req.onsuccess = (e)=>{ 
+                const cursor = e.target.result
+                if (cursor) {
+                    readUserPC(cursor.value.Email)
+                    emailUserId = cursor.value.Email
+                }
+            }
+            req.onerror = (e) =>{
+                console.log(e);
+            }
+        }
+    
+        // Se lee el almacen de UserPC para traer la data del Pc guardado
+        const readUserPC = (emailUser)=>{
+            const transaction = db.transaction(['UserPC'])
+            const objectStore = transaction.objectStore('UserPC')
+            const req = objectStore.openCursor()
+    
+            // Si existe un usuario ya ingresado, ejecuta la funcion correspondiente
+            req.onsuccess = (e)=>{ 
+                const cursor = e.target.result
+                if (cursor && cursor.value.Id === emailUser) {
+                    console.log(cursor.value)
+                }
+            }
+            req.onerror = (e) =>{
+                console.log(e);
+            }
+        }
+    
+    }
 }
+
 function cleanAllDivs() {
     const divs = document.querySelectorAll("[id^='div-']"); // selecciona todos los elementos cuyo id comienza con 'div-'
     divs.forEach(div => {
@@ -136,13 +203,14 @@ async function getImageUrl (e, keyMarca) {
     const urlImg = valuePropiedad[ keyUrl ]
 
     updateImg(keyPropiedad, urlImg)
-    window.scrollTo(1, 1);
+    // window.scrollTo(1, 1);
 }
 function updateImg(idDiv, urlImg) {
     divImg = document.getElementById(`div-${idDiv}`)
     divImg.style.backgroundImage = `url('../${urlImg}')`;
     divImg.style.transition="background-image 3s ease";
 }
+
 let form= document.getElementById("formSelect")
   let submit = document.getElementById("submit")
 
@@ -152,6 +220,8 @@ let form= document.getElementById("formSelect")
     e.preventDefault();
     const selects = document.querySelectorAll('select');
     const selectedValues = [];
+
+    console.log(selects)
   
     selects.forEach((select) => {
       const selectedValue = select.value;
@@ -159,7 +229,8 @@ let form= document.getElementById("formSelect")
     });
   
     allSelectedValues.push(selectedValues);
-    console.log(allSelectedValues);
+
+    runBD(true, allSelectedValues)
   
     form.reset();
     cleanAllDivs();
@@ -170,3 +241,5 @@ bckImg.style.backgroundImage ="url(../images/core-i9.png), url(../images/ryzen.p
 bckImg.style.backgroundRepeat="no-repeat";
 bckImg.style.backgroundSize=("783px 700px, 783px 600px");
 bckImg.style.backgroundPosition=(" -293px 80px, 951px 220px ");
+
+runBD()
