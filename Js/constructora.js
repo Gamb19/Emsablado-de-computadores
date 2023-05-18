@@ -32,7 +32,7 @@ function runBD(addPc = false, dataPC = null) {
             const transaction = db.transaction(['UserPC'],'readwrite')
             const objectStore = transaction.objectStore('UserPC')
             // Eliminar el valor asociado a la clave
-            const deleteRequest = store.delete(emailUserId);
+            const deleteRequest = objectStore.delete(emailUserId);
             deleteRequest.onsuccess = function(event) {
                 objectStore.add(dataPushBD)
                 console.log('Valor eliminado correctamente.', event);
