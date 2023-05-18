@@ -108,7 +108,6 @@ function txtBienvenida() {
          // Almacen de la base de datos
         req.onupgradeneeded = ()=>{
             db = req.result
-            console.log("Create",db);
             db.createObjectStore("signUp",{
                 keyPath:"id"
             }),
@@ -116,6 +115,9 @@ function txtBienvenida() {
                 keyPath:"Id"
             }),
             db.createObjectStore("Components",{
+                keyPath:"Id"
+            }),
+            db.createObjectStore("UserPC",{
                 keyPath:"Id"
             })
         }
