@@ -1,0 +1,80 @@
+
+.p1 {
+
+    padding: 30px;
+}
+.c{
+    padding: 5px;
+}
+.btn  {
+
+    height: 40px;
+
+}
+.p2 {
+
+    padding: 30px;
+
+}
+.T{
+
+   
+    padding-right: 600px;
+}
+.seccion2{
+    text-align: center;
+    height: 300px;
+    background-color: black;
+    color:white;
+}
+.caseT{
+
+    padding: 60px;
+
+}
+.espaciov{
+
+    background-color: white;
+    height: 15px;
+
+}
+.seccion3{
+    padding:10px;
+background-color: antiquewhite;
+height: 300px;
+text-align: center;
+color:black;
+}
+.ramT{
+
+    padding: 60px;
+
+}
+.seccion4{
+    text-align: center;
+    height: 300px;
+    background-color: black;
+    color:white;
+
+}
+.procesadoresT{
+
+    padding: 60px;
+}
+.table{
+
+    padding: 15px;
+
+}
+.thead-dark {
+    background-color: black;
+    color: white ;
+}
+.tablas{
+
+    padding: 15px;
+}
+section div .img1{
+    
+    width: 60px;
+}
