@@ -218,6 +218,18 @@ footer p{
     text-align: center;
     margin-top: 10px;
 }
+.section-products{
+    max-width: 80%;
+    min-width: 90%;
+    margin: 0 auto;
+}
+.error{
+    border: 1px solid red;
+}
+.errorMessage{
+    text-align: center;
+    color: red;
+}
 /* .aparecer{
     transition: background-image 0.5s ease-out;
 } */
