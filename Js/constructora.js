@@ -8,7 +8,7 @@ let handleSelectChange = ()=>{};
 let emailUserId;
 
 function runBD(addPc = false, dataPC = null) {
-    console.log({addPc,dataPC})
+
     if (indexedDB) {
         let db;
         let userPCArray = []; // Variable para almacenar los datos de UserPC
@@ -19,9 +19,9 @@ function runBD(addPc = false, dataPC = null) {
         req.onsuccess = () => {
           db = req.result;
           console.log("OPEN", db);
-          if (addPc && dataPC) addUserPC();
           readComponents();
-          readLogin();
+          if (addPc && dataPC) addUserPC(); // Cuando se da submit
+          else readLogin(); // Solo cuando se carga la pagina
         };
       
         // Agregar PC del Usuario
@@ -33,38 +33,15 @@ function runBD(addPc = false, dataPC = null) {
       
           const transaction = db.transaction(['UserPC'], 'readwrite');
           const objectStore = transaction.objectStore('UserPC');
-      
-          const getRequest = objectStore.get(emailUserId);
-          getRequest.onsuccess = (event) => {
-            const existingData = event.target.result;
-      
-            if (existingData) {
-              existingData.dataPC.push(...dataPC);
-              const updateRequest = objectStore.put(existingData);
-              updateRequest.onsuccess = () => {
-                console.log('Objeto actualizado correctamente');
-              };
-              updateRequest.onerror = (event) => {
-                console.error('Error al actualizar el objeto:', event.target.error);
-              };
-            } else {
-              const newData = {
-                Id: emailUserId,
-                dataPC: dataPC
-              };
-              const addRequest = objectStore.add(newData);
-              addRequest.onsuccess = () => {
-                console.log('Objeto agregado correctamente');
-              };
-              addRequest.onerror = (event) => {
-                console.error('Error al agregar el objeto:', event.target.error);
-              };
-            }
+          const deleteRequest = objectStore.delete(emailUserId); // Limpia el almacenamiento
+          const updateRequest = objectStore.add(dataPushBD); // Agrega la data antigua con la nueva
+          updateRequest.onerror = (event) => {
+            console.log('Objeto Eliminado correctamente', event.target.error);
           };
-      
-          getRequest.onerror = (event) => {
-            console.error('Error al obtener el objeto:', event.target.error);
+          deleteRequest.onerror = (event) => {
+            console.error('Error al Eliminar el objeto:', event.target.error);
           };
+
         };
       
         // Si hay un usuario ya logiado, lo redirige a la pagina principal
@@ -83,7 +60,7 @@ function runBD(addPc = false, dataPC = null) {
             } else {
               userLoggedIn = false;
             }
-            // console.log(`Usuario logeado: ${userLoggedIn}`); // imprimir si se logea un usuario
+            console.log(`Usuario logeado: ${userLoggedIn}`); // imprimir si se logea un usuario
           };
           req.onerror = (e) => {
             console.log(e);
@@ -117,7 +94,11 @@ function runBD(addPc = false, dataPC = null) {
           req.onsuccess = (e) => {
             const cursor = e.target.result;
             if (cursor && cursor.value.Id === emailUser) {
-                console.log(cursor.value);
+                // Traigo la data en el almacenamiento sobre las PC armadas
+                const existingData = cursor.value.dataPC
+                // Pusheo la data del almacenamiento a la varible global de los PC
+                allSelectedValues.push(...existingData)
+
                 // Actualizar el array userPCArray con los datos existentes
                 const dataIndex = userPCArray.findIndex((data) => data.Id === emailUser);
                 if (dataIndex !== -1) {
@@ -244,8 +225,6 @@ let submit = document.getElementById("submit")
     e.preventDefault();
     const selects = document.querySelectorAll('select');
     const selectedValues = [];
-
-    console.log(selects)
   
     selects.forEach((select) => {
       const selectedValue = select.value;
